@@ -4,7 +4,7 @@ Simple bash script that automates the steps taken to create, test and prepare th
 Outputs a ready to use PushCertKey pem file.
 The first two steps need to be done using OSX. The script itself can be run from linux if you have access to the required files.
 
-## Prerequisites
+### Prerequisites
 
 1. Create iOS App (iOS Dev Center)
 2. Create a private/public key pair (iOS Dev Center and keychain Access).
