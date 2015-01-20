@@ -14,7 +14,7 @@ The creation of the requires files need to be done using OSX. The script itself 
 
 **Run the script in the folder where you saved the required files**
 
-### More info on APNS and environemnts
+### Further reading
 
 Documentation by Apple [Registering, Scheduling, and Handling User Notifications](https://developer.apple.com/library/mac/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html#//apple_ref/doc/uid/TP40008194-CH104-SW1)  
 [Great illustrated tutorial by Alo Hafizji on APNS and the signing procedure](http://www.raywenderlich.com/32960/apple-push-notification-services-in-ios-6-tutorial-part-1)  
