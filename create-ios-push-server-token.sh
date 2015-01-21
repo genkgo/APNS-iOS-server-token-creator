@@ -12,12 +12,12 @@ then
     exit 1
 fi
 
-if [ ! -f /*.cer ]; then
+if [ ! -f *.cer ]; then
     echo "Error. Certificate file not found!"
     exit 0
 fi
 
-if [ ! -f /*.p12 ]; then
+if [ ! -f *.p12 ]; then
     echo "Error. Private signing key not found!"
     exit 0
 fi
@@ -32,6 +32,6 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
     echo "Please re-create certificate and signing key and try again!"
 fi
-cat PushCert.pem PushKey.pem > "ios-server-PushCert-$input_variable.pem"
+cat PushCert.pem PushKey.pem > "$input_variable-PushCertKey.pem"
 rm PushKey.pem
 rm PushCert.pem
