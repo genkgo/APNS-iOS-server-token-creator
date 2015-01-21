@@ -12,7 +12,7 @@ then
     exit 1
 fi
 
-if [ ! -f /*.cert ]; then
+if [ ! -f /*.cer ]; then
     echo "Error. Certificate file not found!"
     exit 0
 fi
