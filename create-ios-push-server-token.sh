@@ -24,8 +24,8 @@ fi
 
 openssl x509 -in *.cer -inform der -out PushCert.pem
 openssl pkcs12 -nocerts -out PushKey.pem -in *.p12
-read -p "Press [Enter] key to start sandbox test..."
-openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert PushCert.pem -key PushKey.pem
+read -p "Press [Enter] key to start test against apple's push gateway..."
+openssl s_client -connect gateway.push.apple.com:2195 -cert PushCert.pem -key PushKey.pem
 read -p "Correct handshake y/n? " -n 1 -r
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]
